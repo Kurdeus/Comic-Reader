@@ -151,7 +151,7 @@ function createAnimationDispatcher() {
 /**
  * CONFIGURATION AND CONSTANTS
  */
-const versionCheckUrl = 'https://api.github.com/repos/luejerry/html-mangareader/contents/version';
+const versionCheckUrl = 'https://api.github.com/repos/Kurdeus/Comic-Reader/contents/version';
 /**
  * Key for which app data is stored in LocalStorage
  */
