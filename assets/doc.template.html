@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>${title} - Mangareader</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body data-config="${config}">
+    <div id="version">${version}</div>
+    <div id="pages-container-div">${pages}</div>
+    <div class="toolbar">
+      <div class="menu-header">
+        <div class="menu-icon"></div>
+        <div class="menu-title">View Options</div>
+      </div>
+      <div class="menu-items">
+       
+        <button id="btn-original-width" class="btn-full">Original size</button>
+        <div class="menu-horizontal-group">
+          <div class="menu-horizontal-group-label">Shrink</div>
+          <button id="btn-shrink-width" class="btn-grouped">Width</button>
+          <button id="btn-shrink-height" class="btn-grouped">Height</button>
+          <button id="btn-shrink-size" class="btn-grouped">Both</button>
+        </div>
+        <div class="menu-horizontal-group">
+          <div class="menu-horizontal-group-label">Fit</div>
+          <button id="btn-fit-width" class="btn-grouped">Width</button>
+          <button id="btn-fit-height" class="btn-grouped">Height</button>
+        </div>
+        <div class="menu-horizontal-group">
+          <div class="menu-horizontal-group-label">Smart</div>
+          <button class="btn-smart-fit btn-grouped" data-fit-key="size0">Small</button>
+          <button class="btn-smart-fit btn-grouped" data-fit-key="size1">Large</button>
+        </div>
+        <div class="menu-subtitle">DIRECTION</div>
+        <div class="menu-horizontal-group">
+          <input
+            type="radio"
+            id="input-horizontal-rtl"
+            name="view-direction"
+            value="horizontal-rtl"
+          />
+          <label for="input-horizontal-rtl" class="label-radio">
+            <span class="view-direction-icon">&#x2b60;</span>
+          </label>
+
+          <input type="radio" id="input-vertical" name="view-direction" value="vertical" />
+          <label for="input-vertical" class="label-radio">
+            <span class="view-direction-icon">&#x2b63;</span>
+          </label>
+
+          <input type="radio" id="input-horizontal" name="view-direction" value="horizontal" />
+          <label for="input-horizontal" class="label-radio">
+            <span class="view-direction-icon">&#x2b62;</span>
+          </label>
+        </div>
+        <div class="menu-subtitle">SETTINGS</div>
+        <label class="label-toggle">
+          <input type="checkbox" id="input-smooth-scroll" class="input-toggle" />
+          <span>Smooth scrolling</span>
+        </label>
+        <label class="label-toggle">
+          <input type="checkbox" id="input-seamless" class="input-toggle" />
+          <span>Collapse spacing</span>
+        </label>
+        <label class="label-toggle">
+          <input type="checkbox" id="input-dark-mode" class="input-toggle" />
+          <span>Dark mode</span>
+        </label>
+        <label class="label-toggle">
+          <input type="checkbox" id="input-niggative-mode" class="input-toggle" />
+          <span>Invert</span>
+        </label>
+      </div>
+    </div>
+    <div id="scrubber-icon"></div>
+    <div id="scrubber-container">
+      <div id="scrubber-preview"></div>
+      <div id="scrubber"></div>
+      <div id="scrubber-marker-active"></div>
+      <div id="scrubber-marker"></div>
+    </div>
+    <div id="update-toast">
+      <span> A new version of Mangareader (<span id="next-version"></span>) is available. </span>
+      <a id="link-update" target="_blank">Download</a>
+    </div>
+    <script type="text/javascript" src="zenscroll.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
