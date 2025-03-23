@@ -13,7 +13,7 @@ pyi-makespec --add-data="assets\styles.css;assets" ^
   --add-data="version;." ^
   --add-data="unrar.exe;." ^
   --icon="assets\app.ico" ^
-  --name="Comic Reader" ^
+  --name="ComicReader" ^
   --noconsole ^
 setup.py && ^
-pyinstaller --noconfirm setup.spec
+pyinstaller --noconfirm ComicReader.spec
