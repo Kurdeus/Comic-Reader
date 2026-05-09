@@ -4,6 +4,7 @@ Comic Reader is a lightweight, streamlined image viewer specifically designed fo
 
 
 
+
 ## Features
 
 - View your images in a continuously scrollable page.
