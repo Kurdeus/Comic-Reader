@@ -1,6 +1,6 @@
 # Comic Reader
 
-**Language:** English | [Persian / فارسی](README_FA.md) click here.
+**Language:** English | [Persian / فارسی](README.fa.md) click here.
 
 
 
