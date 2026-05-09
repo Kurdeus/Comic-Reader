@@ -1,5 +1,10 @@
 # Comic Reader
 
+**Language:** English | [Persian / فارسی](README_FA.md) click here.
+
+
+
+
 Comic Reader is a lightweight, streamlined image viewer specifically designed for reading digital comics, manga, and other image-based content. It transforms images from a folder or archive (ZIP/CBZ/RAR/CBR/7Z/CB7 formats) into a single, continuously scrollable page that opens in your default web browser.
 
 
